@@ -67,19 +67,16 @@ components:
           properties:
             name:
               type: string
-              example: "LOKASI"
+              example: "Locationn"
         geometry:
           type: object
           properties:
+            coordinates:
+              type: array
+              example: [[136.7, 21.1]]
             type:
               type: string
               example: "Point"
-            coordinates:
-              type: array
-              items:
-                - type: array
-                  items:
-                    - [125.6, 10.1]
   securitySchemes:
     SECRET:
       type: apiKey
